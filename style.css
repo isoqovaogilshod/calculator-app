@@ -148,18 +148,12 @@ button:focus {
 }
 
 .sun {
-  width: 30px;
-  height: 30px;
-  border: 1px solid yellow;
-  background: yellow;
-  border-radius: 10px;
+  font-size: 30px;
+  color: rgb(155, 155, 221);
 }
 .moon {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgb(119, 119, 221);
-  background: rgb(119, 119, 221);
-  border-radius: 10px;
+  color: yellow;
+  font-size: 30px;
 }
 .dayNightPart .sun {
   display: none;
@@ -211,26 +205,25 @@ button:focus {
     width: 300px;
     height: 610px;
   }
-  
+
   .calc-keys {
     display: flex;
     width: 310px;
     max-height: 300px;
     gap: 10px;
   }
-  
+
   .calculator {
     max-height: 100px;
     padding: 160px 0 35px 25px;
   }
-  
+
   .num-bg {
     padding: 15px;
     padding-top: 9.1px;
     padding-bottom: 9.1px;
-    
   }
-  
+
   .calc-input {
     padding-right: 30px;
     padding-bottom: 10px;

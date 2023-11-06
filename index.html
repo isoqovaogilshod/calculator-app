@@ -15,10 +15,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="CalcApp lightPart">
+      <div class="CalcApp">
         <div class="dayNightPart">
-          <div class="moon"></div>
-          <div class="sun"></div>
+          <i class="moon fa-solid fa-star fa-spin"></i>
+          <i class="sun fa-solid fa-star fa-spin"></i>
         </div>
         <div class="calculator">
           <div class="calc-input">
@@ -26,60 +26,64 @@
             <div class="output"></div>
           </div>
           <div class="calc-keys">
-            <button data-key="clear" class="key delete">
+            <button onclick="clr()" data-key="clear" class="key delete">
               <span class="del-bg"> CLR </span>
             </button>
 
-            <button data-key="backspace" class="key delete">
+            <button
+              onclick="del()"
+              data-key="backspace"
+              class="key delete"
+            >
               <span class="del-bg"> DEL </span>
             </button>
 
-            <button data-key="/" class="key orange">
+            <button onclick="calc('/')" data-key="/" class="key orange">
               <span class="operator orange-bg"> ÷ </span>
             </button>
-            <button data-key="7" class="key button">
+            <button onclick="calc(7)" data-key="7" class="key button">
               <span class="num-bg"> 7 </span>
             </button>
-            <button data-key="8" class="key button">
+            <button onclick="calc(8)" data-key="8" class="key button">
               <span class="num-bg"> 8 </span>
             </button>
-            <button data-key="9" class="key button">
+            <button onclick="calc(9)" data-key="9" class="key button">
               <span class="num-bg"> 9 </span>
             </button>
-            <button data-key="*" class="key orange">
+            <button onclick="calc('*')" data-key="*" class="key orange">
               <span class="operator orange-bg"> × </span>
             </button>
-            <button data-key="4" class="key button">
+            <button onclick="calc(4)" data-key="4" class="key button">
               <span class="num-bg"> 4 </span>
             </button>
-            <button data-key="5" class="key button">
+            <button onclick="calc(5)" data-key="5" class="key button">
               <span class="num-bg"> 5 </span>
             </button>
-            <button data-key="6" class="key button">
+            <button onclick="calc(6)" data-key="6" class="key button">
               <span class="num-bg"> 6 </span>
             </button>
-            <button data-key="-" class="key orange">
+            <button onclick="calc('-')" data-key="-" class="key orange">
               <span class="operator orange-bg"> - </span>
             </button>
-            <button data-key="1" class="key button">
+            <button onclick="calc(1)" data-key="1" class="key button">
               <span class="num-bg"> 1 </span>
             </button>
-            <button data-key="2" class="key button">
+            <button onclick="calc(2)" data-key="2" class="key button">
               <span class="num-bg"> 2 </span>
             </button>
-            <button data-key="3" class="key button">
+            <button onclick="calc(3)" data-key="3" class="key button">
               <span class="num-bg"> 3 </span>
             </button>
-            <button data-key="+" class="key orange">
+            <button onclick="calc('+')" data-key="+" class="key orange">
               <span class="operator orange-bg"> + </span>
             </button>
-            <button data-key="0" class="key button zero">
+            <button onclick="calc(0)" data-key="0" class="key button zero">
               <span class="zero-bg"> 0 </span>
             </button>
-            <button data-key="." class="key button">
+            <button onclick="calc('.')" data-key="." class="key button">
               <span class="point"> . </span>
             </button>
-            <button data-key="=" class="key orange">
+            <button onclick="calc('=')" data-key="=" class="key orange">
               <span class="orange-bg"> = </span>
             </button>
           </div>
