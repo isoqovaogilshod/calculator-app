@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c6c5c5;
+  overflow-x: hidden;
+}
+
+.CalcApp {
+  position: relative;
+  width: 330px;
+  height: 650px;
+  background: linear-gradient(180deg, #242833 0%, #16181d 100%);
+  border-radius: 30px;
+}
+.lightPart {
+  background: #dee1ea;
+}
+
+.calc-input {
+  max-width: 100%;
+  min-height: 100px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+.calc-input .output {
+  width: 100%;
+  overflow-x: scroll;
+  max-width: 100%;
+  color: white;
+  font-size: 50px;
+}
+
+.output::-webkit-scrollbar {
+  display: none;
+}
+
+.output {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.calc-input .input {
+  font-size: 28px;
+  color: #525d6d;
+}
+
+button {
+  background: #252b38;
+  border-radius: 23px;
+  font-size: 21px;
+  border: none;
+  height: 68px;
+  width: 68px;
+  color: white;
+  box-shadow: 4px 4px 4px 0px #383e4e inset, 3px 3px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+button:active,
+button:focus {
+  filter: brightness(120%);
+}
+
+.calculator {
+  max-height: 100px;
+  padding: 150px 19px 35px 19px;
+}
+.calc-keys {
+  display: flex;
+  gap: 8px;
+  /* height: 300px; */
+  width: 350px;
+  flex-wrap: wrap;
+}
+
+.zero {
+  width: 142.7px;
+  border-radius: 23px;
+}
+
+.delete {
+  width: 106px;
+  background: #545f71;
+  box-shadow: 4px 4px 4px 0px #6c788e inset, 3px 3px 7px 0px rgba(0, 0, 0, 0.15);
+}
+.num-bg {
+  padding: 22px;
+  padding-top: 16.1px;
+  padding-bottom: 18.1px;
+  border-radius: 15px;
+  background: linear-gradient(134deg, #2a303e 15.47%, #393e51 94.71%);
+}
+.orange {
+  background: #d9781f;
+  box-shadow: 4px 4px 4px 0px #dca063 inset, 3px 3px 7px 0px rgba(0, 0, 0, 0.15);
+}
+
+.del-bg {
+  padding: 27px;
+  padding-top: 16.1px;
+  padding-bottom: 18.1px;
+  border-radius: 15px;
+  background: linear-gradient(134deg, #465262 15.47%, #626b7c 94.71%);
+}
+.point {
+  padding: 27px;
+  padding-bottom: 16px;
+  padding-top: 15px;
+  border-radius: 15px;
+  background: linear-gradient(134deg, #2a303e 15.47%, #393e51 94.71%);
+}
+
+.orange-bg {
+  padding: 22px;
+  padding-top: 16.1px;
+  padding-bottom: 18.1px;
+  border-radius: 15px;
+  background: linear-gradient(134deg, #dd732f 15.47%, #e28d21 94.71%);
+}
+
+.zero-bg {
+  padding: 60px;
+  padding-top: 16.1px;
+  padding-bottom: 18.1px;
+  border-radius: 15px;
+  background: linear-gradient(134deg, #2a303e 15.47%, #393e51 94.71%);
+}
+
+.dayNightPart {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.sun {
+  width: 30px;
+  height: 30px;
+  border: 1px solid yellow;
+  background: yellow;
+  border-radius: 10px;
+}
+.moon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(119, 119, 221);
+  background: rgb(119, 119, 221);
+  border-radius: 10px;
+}
+.dayNightPart .sun {
+  display: none;
+}
+
+.lightPart button {
+  box-shadow: -8px -8px 15px rgba(220, 216, 216, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#dadee9, #eceff4);
+  color: black;
+}
+
+.lightPart .num-bg {
+  background: linear-gradient(#fefefe, #d8d9db);
+}
+
+.lightPart .del-bg {
+  background: linear-gradient(134deg, #bdc6d4 15.47%, #c5cedf 94.71%);
+}
+
+.lightPart .delete {
+  background: linear-gradient(134deg, #c8d1e0 15.47%, #bec8db 94.71%);
+}
+
+.lightPart .zero,
+.lightPart .point {
+  background: linear-gradient(#dadee9, #eceff4);
+}
+
+.lightPart .zero-bg,
+.lightPart .point {
+  background: linear-gradient(#fefefe, #d8d9db);
+}
+
+.lightPart .orange {
+  background: linear-gradient(140deg, #dd771a 49%, #dd7414);
+}
+
+.lightPart .orange-bg {
+  background: linear-gradient(140deg, #d9781f 49%, #ef933e);
+  padding: 14px;
+  padding-top: 10xp;
+  border-radius: 23px;
+  padding-bottom: 10xp;
+}
+
+.lightPart .output {
+  color: black;
+}
+
+@media screen and (max-width: 370px) {
+  .CalcApp {
+    width: 300px;
+    height: 610px;
+  }
+  
+  .calc-keys {
+    display: flex;
+    width: 310px;
+    max-height: 300px;
+    gap: 10px;
+  }
+  
+  .calculator {
+    max-height: 100px;
+    padding: 160px 0 35px 25px;
+  }
+  
+  .num-bg {
+    padding: 15px;
+    padding-top: 9.1px;
+    padding-bottom: 9.1px;
+    
+  }
+  
+  .calc-input {
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+  button {
+    height: 55px;
+    width: 55px;
+    font-size: 18px;
+  }
+
+  .zero-bg {
+    padding: 48px;
+    padding-top: 9.1px;
+    padding-bottom: 9.1px;
+  }
+  .zero {
+    width: 119px;
+  }
+
+  .del-bg {
+    padding: 17px;
+    padding-top: 8.1px;
+    padding-bottom: 8.1px;
+  }
+
+  .delete {
+    width: 88px;
+  }
+}
