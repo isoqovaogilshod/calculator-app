@@ -104,6 +104,15 @@ function calc(n) {
   if (n == "*" && str.slice(-1) == "*") {
     return;
   }
+  if (n == "/" && str.slice(-1) == "/") {
+    return;
+  }
+  if (n == "+" && str.slice(-1) == "+") {
+    return;
+  }
+  if (n == "-" && str.slice(-1) == "-") {
+    return;
+  }
   str += n;
   input.innerText = str;
   console.log(str);
