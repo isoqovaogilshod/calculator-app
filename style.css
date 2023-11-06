@@ -200,10 +200,6 @@ button:focus {
 
 .lightPart .orange-bg {
   background: linear-gradient(140deg, #d9781f 49%, #ef933e);
-  padding: 14px;
-  padding-top: 10xp;
-  border-radius: 23px;
-  padding-bottom: 10xp;
 }
 
 .lightPart .output {
